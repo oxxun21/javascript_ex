@@ -1,0 +1,32 @@
+객체 생성 방법
+1. object 생성 {}
+2. class를 인스턴스화
+3. function을 사용
+
+1. 
+const person = {
+  name: "가은",
+  year: 2002
+}
+
+2.
+class Person {
+  name;
+  year;
+
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+console.log(new Person("가은", 2002));
+
+3. 생성자 함수
+function PersonFunction(name, year){
+  this.name = name;
+  this.year = year;
+}
+
+const gaeun = new PersonFunction("가은", 2002);
+
+* this 키워드를 사용하여 함수 안에 property 입력을 한 경우에만 함수에 new 키워드 사용 가능
