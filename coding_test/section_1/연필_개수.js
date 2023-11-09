@@ -6,3 +6,11 @@ function solution(n) {
 
 console.log(solution(178));
 console.log(solution(25));
+/////////////////////////////////////////
+function solution(n) {
+  let answer = Math.ceil(n / 12);
+  return answer;
+}
+
+console.log(solution(178));
+console.log(solution(25));
